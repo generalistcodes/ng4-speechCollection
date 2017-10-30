@@ -1,0 +1,20 @@
+<md-toolbar color="primary" class="mat-elevation-z6">
+  {{title}}
+
+  <span class="app-toolbar-filler"></span>
+
+  <div class="pull-right">
+
+    <button md-button md-tooltip="Open speeches" routerLink="speeches"  role="button" routerLinkActive="active">View Speeches</button>
+    <button md-button md-tooltip="Add new speeches" routerLink="add"  role="button" routerLinkActive="active">Submit New Speeches</button>
+    <button md-button md-tooltip="Search speeches" routerLink="findbyname"  role="button" routerLinkActive="active">Search All Speeches</button>
+
+  </div>
+</md-toolbar>
+<div class="container-fluid">
+  <md-card>
+    <router-outlet></router-outlet>
+  </md-card>
+
+
+</div>
